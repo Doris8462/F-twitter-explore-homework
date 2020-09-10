@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5%;
+  border-bottom: 2px solid $border-color;
+  align-items: center;
+}
+.logo {
+  color: $white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav-button__login {
+  @include btn-variant($primary-color, $body-bg);
+  @extend .login-button;
+}
+.nav-button__register {
+  @include btn-variant($white, $primary-color);
+  @extend .login-button;
+}
