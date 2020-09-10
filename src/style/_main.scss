@@ -1,4 +1,46 @@
-.loginbar__login,
-.loginbar__register {
+.container {
+  height: 100vh;
+}
+.loginbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid $border-color;
+  border-radius: $border-radius-base;
+  text-align: center;
+  min-height: 450px;
+  width: 40%;
+  margin: 8% auto;
+  height: 60%;
+  padding: 20px 6%;
+}
+.loginbar__title {
+  font-size: 1.5rem;
+  color: $white;
+  font-weight: bold;
+}
+.loginbar__login {
   @extend .login-button;
+  @include btn-variant($primary-color, $body-bg);
+}
+
+.loginbar__register {
+  @include btn-variant($white, $primary-color);
+  @extend .login-button;
+}
+.loginbar__forget-passwor {
+  text-decoration: none;
+  color: $primary-color;
+  display: block;
+  width: 5rem;
+  float: left;
+}
+.loginbar__or {
+  margin: -15px 0;
+}
+.loginbar__user-name {
+  @extend .input-bar;
+}
+.loginbar__password {
+  @extend .input-bar;
 }

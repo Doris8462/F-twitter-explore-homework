@@ -3,3 +3,9 @@
   padding: 4px 26px;
   border: 1px solid $primary-color;
 }
+.input-bar {
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid $border-color;
+  background-color: $body-bg;
+}

@@ -1,9 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 5%;
+  padding: 20px 5%;
   border-bottom: 2px solid $border-color;
-  align-items: center;
 }
 .logo {
   color: $white;
